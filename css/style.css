@@ -8,6 +8,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Overpass', sans-serif;
@@ -32,7 +35,8 @@ body {
 .card {
   width: 41.2rem;
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
-  border-radius: 3rem; }
+  border-radius: 3rem;
+  margin: 2.4rem; }
   .card__icon {
     display: flex;
     justify-content: center;
