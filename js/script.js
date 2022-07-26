@@ -10,7 +10,11 @@ form.addEventListener("submit", event => {
 
     event.preventDefault();
 
-    selected.innerHTML = form.elements.rating.value;
+    const selected_value = form.elements.rating.value;
+
+    if(!selected_value) return;
+
+    selected.innerHTML = selected_value;
 
     rating_state.style.display = "none";
     thanks_you_state.style.display = "flex";
